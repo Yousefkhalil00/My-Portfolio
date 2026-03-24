@@ -9,13 +9,20 @@ import Button from "./Button";
 const icons = [
   { index: 1, icon: <FaGithub />, link: "https://github.com/Yousefkhalil00" },
   { index: 2, icon: <MdEmail />, link: "mailto:yousefkhalil894@gmail.com" },
-  { index: 3, icon: <FaLinkedinIn />, link: "https://www.linkedin.com/in/yousef-khalil-44617a279/" },
+  {
+    index: 3,
+    icon: <FaLinkedinIn />,
+    link: "https://www.linkedin.com/in/yousef-khalil-44617a279/",
+  },
 ];
 
 const Hero = () => {
   return (
-    <section id="home" className="grid grid-cols-1 lg:grid-cols-2 lg:w-[80%] container mx-auto py-10 px-6 gap-12 lg:gap-0 items-center min-h-[80vh]">
-      <motion.div 
+    <section
+      id="home"
+      className="grid grid-cols-1 lg:grid-cols-2 lg:w-[80%] container mx-auto py-10 px-6 gap-12 lg:gap-0 items-center min-h-[80vh]"
+    >
+      <motion.div
         initial={{ opacity: 0, x: -50 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
@@ -58,7 +65,11 @@ const Hero = () => {
               Get In Touch
             </Button>
           </a>
-          <a href="/your_cv_file.pdf" download="Your_CV.pdf" className="w-full sm:w-auto">
+          <a
+            href="./assets/Yousef-KhalilCV.pdf"
+            download="Yousef-KhalilCV.pdf"
+            className="w-full sm:w-auto"
+          >
             <Button className="w-full sm:w-auto bg-glass border border-blue-500 hover:bg-blue-500/20 hover:scale-105 transition-all duration-300 active:scale-95 group">
               <span className="bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent group-hover:text-blue-300 transition-colors">
                 Download CV
@@ -80,7 +91,7 @@ const Hero = () => {
           ))}
         </div>
       </motion.div>
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, x: 50 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
