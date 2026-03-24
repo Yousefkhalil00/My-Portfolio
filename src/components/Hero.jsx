@@ -30,7 +30,7 @@ const Hero = () => {
         className="flex flex-col justify-between gap-6 order-2 lg:order-1 text-center lg:text-left"
       >
         <p className="text-secondary text-xl tracking-wide">Hello I'm</p>
-        <h1 className="lg:text-6xl md:text-5xl text-4xl bg-gradient-to-b from-blue-600 to-blue-400 text-transparent bg-clip-text font-bold">
+        <h1 className="lg:text-6xl md:text-5xl text-4xl bg-linear-to-b from-blue-600 to-blue-400 text-transparent bg-clip-text font-bold">
           Yousef Khalil
         </h1>
         <div className="font-bold">
@@ -66,12 +66,12 @@ const Hero = () => {
             </Button>
           </a>
           <a
-            href="./assets/Yousef-KhalilCV.pdf"
+            href="/Yousef-KhalilCV.pdf"
             download="Yousef-KhalilCV.pdf"
             className="w-full sm:w-auto"
           >
             <Button className="w-full sm:w-auto bg-glass border border-blue-500 hover:bg-blue-500/20 hover:scale-105 transition-all duration-300 active:scale-95 group">
-              <span className="bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent group-hover:text-blue-300 transition-colors">
+              <span className="bg-linear-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent group-hover:text-blue-300 transition-colors">
                 Download CV
               </span>
             </Button>
